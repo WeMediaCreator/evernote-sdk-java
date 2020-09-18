@@ -42,7 +42,7 @@ public class EvernoteAuthTest {
   @Test
   public void testParseOAuthResponse() {
     EvernoteAuth auth = EvernoteAuth.parseOAuthResponse(
-        EvernoteService.SANDBOX, response);
+        EvernoteService.EVERNOTE_SANDBOX, response);
     assertEquals(
         "S=s4:U=a1:E=12bfd68c6b6:C=12bf8426ab8:P=7:A=en_oauth_test:H=3df9cf6c0d7bc410824c80231e64dbe1",
         auth.getToken());
