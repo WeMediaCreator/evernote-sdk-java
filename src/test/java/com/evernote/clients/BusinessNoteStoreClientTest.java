@@ -83,7 +83,7 @@ public class BusinessNoteStoreClientTest {
       client = new BusinessNoteStoreClient(personalClient, noteStoreClient,
           authenticationResult);
     } else {
-      EvernoteAuth auth = new EvernoteAuth(EvernoteService.SANDBOX, token);
+      EvernoteAuth auth = new EvernoteAuth(EvernoteService.EVERNOTE_SANDBOX, token);
       client = new ClientFactory(auth).createBusinessNoteStoreClient();
     }
   }
