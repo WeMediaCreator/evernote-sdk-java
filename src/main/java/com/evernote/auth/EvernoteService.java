@@ -28,9 +28,10 @@ package com.evernote.auth;
 
 public enum EvernoteService {
 
-  PRODUCTION("https://www.evernote.com"), //
-  SANDBOX("https://sandbox.evernote.com"), //
-  YINXIANG("https://app.yinxiang.com");
+  EVERNOTE_PRODUCTION("https://www.evernote.com"), //
+  EVERNOTE_SANDBOX("https://sandbox.evernote.com"), //
+  YINXIANG_PRODUCTION("https://app.yinxiang.com"),
+  YINXIANG_SANDBOX("https://sandbox.yinxiang.com");
 
   private String host;
 
