@@ -38,7 +38,7 @@ public class ClientFactoryTest {
   @Test
   public void testGenerateUserAgent() {
     EvernoteAuth auth = new EvernoteAuth(
-        EvernoteService.SANDBOX,
+        EvernoteService.EVERNOTE_SANDBOX,
         "S=s1:U=11a1a:E=222b22bbb22:C=33c333c3333:P=4dd:A=en-devtoken:V=2:H=e5555ee5ee55555555eee555ee55e5ee");
     ClientFactory cf = new ClientFactory(auth);
     String javaVersion = System.getProperty("java.version");
