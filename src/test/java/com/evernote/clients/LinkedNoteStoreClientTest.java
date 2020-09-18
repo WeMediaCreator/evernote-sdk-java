@@ -92,7 +92,7 @@ public class LinkedNoteStoreClientTest {
       client = new LinkedNoteStoreClient(personalClient, noteStoreClient,
           authenticationResult);
     } else {
-      EvernoteAuth auth = new EvernoteAuth(EvernoteService.SANDBOX, token);
+      EvernoteAuth auth = new EvernoteAuth(EvernoteService.EVERNOTE_SANDBOX, token);
       ClientFactory factory = new ClientFactory(auth);
       linkedNotebook = factory.createNoteStoreClient().listLinkedNotebooks()
           .get(0);
